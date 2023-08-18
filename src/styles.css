@@ -331,6 +331,14 @@ a:hover {
     flex-direction: column;
 }
 
+/*.skills-details-container article {
+  padding: 1.5rem;
+  flex: 1;
+  background: radial-gradient(circle, #eee, white 80%);
+  border-radius: 50%;
+  text-align: center;
+}*/
+
 .article-container {
     display: flex;
     text-align: initial;
@@ -340,13 +348,113 @@ a:hover {
     justify-content: space-around;
   }
 
-article {
+  article {
     display: flex;
     width: 7rem;
     justify-content: space-around;
     gap: 0.5rem;
+    flex-direction: column; /* Add this line */
+
+    padding: 1.5rem;
+    flex: 1;
+    border-radius: 50%;
+    text-align: center;
   }
-  
+
+  article:hover {
+    background: radial-gradient(circle, #eee, white 90%);
+   
+  }
+
+
   article .icon {
     cursor: default;
+    display: none;
   }
+
+  /*PROJECTS*/
+
+  #projects {
+    position: relative;
+  }
+
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background-color: rgb(250, 250, 250);
+  }
+
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+
+  .project-title {
+    margin: 1rem;
+    color: black;
+
+  }
+
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+  /*CONTACT*/
+
+  #contacts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 1rem auto; /* Adjusted margin */
+  padding: 0.5rem;
+}
+
+.contact-info-downer-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 1rem auto; /* Adjusted margin */
+  padding: 0.5rem;
+}
+
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+
+}
+
+.email-icon {
+  height: 2.6rem;
+}
+
+/*FOOTER*/
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
